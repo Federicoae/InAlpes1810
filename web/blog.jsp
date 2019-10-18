@@ -1,10 +1,13 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <title>Lista de Inmuebles</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <script language="javascript" type="text/javascript" src="ValidarCliente.js"></script>
+<%@page import="java.sql.ResultSet"%>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>INGENIERIA WEB</title>
+        <script language="javascript" type="text/javascript" src="ValidarCliente.js"></script>
         <link href="./css/misEstilos.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Mukta+Mahee:200,300,400|Playfair+Display:400,700" rel="stylesheet">
         <link rel="stylesheet" href="css/bootstrap.css">
@@ -15,8 +18,8 @@
         <link rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css">
     <!-- Theme Style -->
         <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
+    </head>   
+<body class="body2">
     <header class="site-header">
       <div class="container-fluid">
         <div class="row">
@@ -37,7 +40,7 @@
                       <ul class="list-unstyled menu">
                         <li class="active"><a href="index.html">Inicio</a></li>
                         <li><a href="about.html">Nosotros</a></li>
-                        <li><form action="listarInmuebles" method="post"><button class="button1" type="submit"><a>Lista de Inmuebles</a></button></form></li>
+                        <li><a href="blog.html">Lista de Inmuebles</a></li>
                         <li><a href="contact.html">Contactenos</a></li>
                       </ul>
                     </div>
@@ -61,19 +64,20 @@
     </header>
     <!-- END head -->
 
-    <section class="site-hero overlay page-inside" style="background-image: url(img/hero_1.jpg)">
+    <section class="site-hero overlay" style="background-image: url(img/hero_1.jpg)">
       <div class="container">
         <div class="row site-hero-inner align-items-center">
-          <div class="col-md-7 text-left mr-auto">
-            <h1 class="heading" data-aos="fade-up">Inmuebles</h1>
-          </div>
+          <div class="col-md-7 text-left ml-auto">
+            <h1 class="heading" data-aos="fade-up" style="color: orange">Inmobiliaria InAlpes</h1>
+            <p class="sub-heading mb-5" data-aos="fade-up" data-aos-delay="100">LISTA DE INMUEBLES</p>
+            </div>
         </div>
+        <a href="#next-section" class="smoothscroll scroll-down">Desliza</a>
       </div>
     </section>
     <!-- END section -->
 
-
-    <section class="section bg-light post" id="next-section">
+    <section class="section visit-section" id="next-section">
                 <div id="content">
             <% ResultSet resul= (ResultSet)request.getAttribute("lista");%>
             <table class="table1" id="listaInmuebles">
@@ -88,11 +92,11 @@
                 <tr>
                     <% String b="";
                     if(resul.getString("ubicacion").equals("1")){
-                       a="Bogota";
+                       b="Bogota";
                     }else if(resul.getString("ubicacion").equals("2")){
-                         a="Cali";
+                         b="Cali";
                     }else if(resul.getString("ubicacion").equals("3")){
-                         a="Medellin";
+                         b="Medellin";
                     } %>
                     <td id="ele"><p class="p1"><%= b %></p></td>
                     <td id="ele"><p class="p1"><%= resul.getString("direccion") %></p></td>
@@ -111,10 +115,18 @@
                 <% } %>
             </table>
         </div>
+            
+            <div>
+                <table class="table1">
+                    <tr>
+                     <td><form action="listarInmueblesI" method="post"><button class="button1" type="submit" value="1" name="ubi"><a>Bogota</a></button></form></li></td>
+                     <td><form action="listarInmueblesI" method="post"><button class="button1" type="submit" value="2" name="ubi"><a>Cali</a></button></form></li></td>
+                     <td><form action="listarInmueblesI" method="post"><button class="button1" type="submit" value="3" name="ubi"><a>Medellin</a></button></form></li></td>
+                </tr></table>
+            </div>
     </section>
-    
-    
-<footer class="section footer-section bg-primary">
+    <!-- END section -->
+    <footer class="section footer-section bg-primary">
       <div class="container" >
         <div class="row mb-4">
           <div class="col-md-3 mb-5">

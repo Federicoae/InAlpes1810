@@ -120,6 +120,16 @@ public class inmueble extends Conexion{
             return null;
         }
     }
+    public ResultSet listarInmueblesB(int ubicacion){
+        try {
+            resultado = estam.executeQuery("SELECT * FROM inmueble WHERE ubicacion ='"+ubicacion+"';");
+            System.out.printf("se consulto");
+            return resultado;
+        } catch (SQLException ex) {
+            System.out.println("SQLException: " + ex.getMessage());
+            return null;
+        }
+    }
     
     public boolean modificar(String direccion, int ubicacion, int contrato, String descripcion, long precio) {
         try {

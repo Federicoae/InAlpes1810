@@ -18,8 +18,8 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author andre
  */
-@WebServlet(urlPatterns = {"/listarInmuebles"})
-public class listarInmuebles extends HttpServlet {
+@WebServlet(urlPatterns = {"/listarInmueblesI"})
+public class listarInmueblesI extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -34,9 +34,10 @@ public class listarInmuebles extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
+            int ubicacion = Integer.parseInt(request.getParameter("ubi"));
             ResultSet resultad=null;
             inmueble per = new inmueble();
-            resultad = per.listarInmuebles();
+            resultad = per.listarInmueblesB(ubicacion);
             request.setAttribute("lista", resultad);
             request.getRequestDispatcher("blog.jsp").forward(request, response);
         }
