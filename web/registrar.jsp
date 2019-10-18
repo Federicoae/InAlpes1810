@@ -96,7 +96,12 @@ and open the template in the editor.
                 <tr><td><p class="form">CONTRASEÑA:<input class="caja" type="text" name="pass" id="pass"></p></tr></td>
                 <tr><td><p class="form">CORREO:<input class="caja" type="text" name="cor" id="mail">
                 CELULAR:<input class="caja" type="text" name="cel" id="tel"></p></tr></td>
-                <tr><td><input class="button" type="submit" id="submit" value="REGISTRAR" onclick="return valida();/></p></tr></td>
+                <tr><td><input class="button" type="submit" id="submit" value="REGISTRAR" onclick="crear()"/></p></tr></td>
+                            <script>
+                                function crear(){
+                                    alert("Usuario Creado")
+                                }
+                            </script>
                 </table>
             </div> 
         </form>
