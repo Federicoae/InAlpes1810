@@ -20,6 +20,7 @@ and open the template in the editor.
         <link rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css">
     <!-- Theme Style -->
         <link rel="stylesheet" href="css/style.css">
+        <script language="javascript" type="text/javascript" src="ValidarCliente.js"></script>
     </head>
 <body class="body">
     <header class="site-header">
@@ -95,7 +96,7 @@ and open the template in the editor.
                 <tr><td><p class="form">CONTRASEÑA:<input class="caja" type="text" name="pass" id="pass"></p></tr></td>
                 <tr><td><p class="form">CORREO:<input class="caja" type="text" name="cor" id="mail">
                 CELULAR:<input class="caja" type="text" name="cel" id="tel"></p></tr></td>
-                <tr><td><input class="button" type="submit" id="submit" value="REGISTRAR"/></p></tr></td>
+                <tr><td><input class="button" type="submit" id="submit" value="REGISTRAR" onclick="return valida();/></p></tr></td>
                 </table>
             </div> 
         </form>
@@ -116,7 +117,12 @@ and open the template in the editor.
                     </optgroup></select>DOCUMENTO:<input class="caja" type="text" name="id" id="ced"></p></td></tr>
             <tr>
                         <td colspan="2">
-                            <input class="button" type="submit" id="submit" value="ELIMINAR"/> 
+                            <input class="button" type="submit" id="submit" onclick="borrar()" value="ELIMINAR"/> 
+                            <script>
+                                function borrar(){
+                                    alert("Usuario Borrado")
+                                }
+                            </script>
                         </td>
 
                     </tr>
@@ -143,7 +149,7 @@ and open the template in the editor.
                     </tr>
                     <tr>
                         <td colspan="2">
-                            <input class="button" type="submit" id="submit" value="BUSCAR"/> 
+                            <input class="button" type="submit" id="submit" onclick="return valiedi();" value="BUSCAR"/> 
                         </td>
                     </tr>
                 </table>

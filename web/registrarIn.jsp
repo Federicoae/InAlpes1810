@@ -102,6 +102,43 @@ and open the template in the editor.
         </form>
     </section>
     <!-- END section -->
+        <section class="section visit-section" id="next-section1">
+        <form action="eliminarInmueble" method="post" onsubmit="return validarModificar();">
+            <table class="table1"><tr><td colspan="2"><strong><p>ELIMINAR INMUEBLE</p></strong></td></tr>
+            <tr><td>
+            <div >
+                <p class="form"><select class="caja" name="ubi" id="ubi">
+                    <option>Seleccionar ciudad</option>
+                    <option value="1">Bogota</option> 
+                    <option value="2">Cali</option> 
+                    <option value="3">Medellin</option>
+                    </optgroup></select><DIRECCION:<input class="caja" type="text" name="dir" id="dir"></p></td></tr>
+            <tr>
+                        <td colspan="2">
+                            <input class="button" type="submit" id="submit" value="ELIMINAR"/> 
+                        </td>
+
+                    </tr>
+                </table>  
+            </form>
+     
+    </section>
+    
+    
+    <section class="section visit-section" id="next-section2">
+      <form action="buscarInmueble" method="post" onsubmit="return validarModificar();">
+                <table class="table1"><tr><td>
+            <div >
+                <p class="form"><select class="caja" name="ubi" id="ubi">
+                    <option>Seleccionar ciudad</option>
+                    <option value="1">Bogota</option> 
+                    <option value="2">Cali</option> 
+                    <option value="3">Medellin</option>
+                    </optgroup></select><DIRECCION:<input class="caja" type="text" name="dir" id="dir"></p></td></tr>
+                </table>
+            </form>
+    </section>
+    
     <footer class="section footer-section bg-primary">
       <div class="container" >
         <div class="row mb-4">
