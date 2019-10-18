@@ -1,0 +1,161 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 17/09/2019, 09:27:47 AM
+    Author     : negri
+*/
+.body {
+    background: url("https://inmoversion.es/wp-content/uploads/2019/05/shutterstock_499614244-1080x675.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+.body2 {
+    background: url("https://www.ecestaticos.com/imagestatic/clipping/305/774/305774c0aa48eb4e03627d94430599b1/puedo-compensar-las-perdidas-de-la-venta-de-un-piso-con-los-beneficios-de-un-fondo.jpg?mtime=1559922503") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+.body1 {
+    background: url("https://img.freepik.com/foto-gratis/modelo-casa-agente-inmobiliario-cliente-discutiendo-contrato-comprar-casa_1418-2408.jpg?size=626&ext=jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+
+p {
+    font-family: serif;
+    font-size: x-large;
+    font-weight: 900;
+    color: orange;
+}
+.p1 {
+    font-family: serif;
+    font-size: x-large;
+    font-weight: 900;
+    color: black;
+}
+.form{
+    font-family: cursive;
+    font-size: large;
+    font-weight: bolder;
+    color: goldenrod;
+}
+
+h1{
+font-family: Copperplate Gothic Light, sans-serif;
+font-size: medium;
+color: black;
+}
+.caja {
+        margin:0 0 25px;
+	overflow:hidden;
+	padding:8px;
+	//-webkit-border-radius: 10px;
+        //border-radius: 10px;
+        background: #889ccf; 
+        border-radius: 35px 35px 35px 35px; 
+   -moz-border-radius: 35px 35px 35px 35px; 
+   -webkit-border-radius: 35px 35px 35px 35px; 
+}
+.caja2 {
+        width: 400px;
+        height: 400px;
+        margin:0 0 25px;
+	overflow:hidden;
+	padding:8px;
+	//-webkit-border-radius: 10px;
+        //border-radius: 10px;
+        background: #889ccf; 
+        border-radius: 35px 35px 35px 35px; 
+   -moz-border-radius: 35px 35px 35px 35px; 
+   -webkit-border-radius: 35px 35px 35px 35px; 
+}
+
+.caja1{
+font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+color: #ffffff; 
+font-size: 18px; 
+font-weight: 400; 
+text-align: center; 
+background: #889ccf; 
+margin: 0 0 25px; 
+overflow: hidden; 
+padding: 2px; 
+border-radius: 35px 0px 35px 0px; 
+-moz-border-radius: 35px 0px 35px 0px; 
+-webkit-border-radius: 35px 0px 35px 0px; 
+border: 2px solid #5878ca;
+}
+
+.circ
+{
+     width:0;
+     height:0;
+     border-right: 10px solid #d9534f;
+     border-top: 10px solid #428bca;
+     border-left: 10px solid #f0ad4e;
+     border-bottom: 10px solid #5cb85c;
+     -moz-border-radius: 100%;
+     -webkit-border-radius: 100%;
+     border-radius: 100%;
+}
+
+.op{
+    font: oblique bold 120% cursive;
+    color: deepskyblue;
+}
+
+.button {
+  width: 600px;
+  height: 70px;
+  background: transparent;
+  border-radius: 10px;
+  border: 3px transparent;
+  transition: all .3s cubic-bezier(0.67, 0.17, 0.40, 0.83);
+  font-family: cursive;
+  font-size: xx-large;
+  color: orange;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.button1 {
+  background: transparent;
+  border: transparent;
+  color: white;
+}
+
+
+a{
+    font-family: cursive;
+    font-size: x-large;
+    font-weight: 900;
+    color: black;
+    text-decoration: none;
+}
+
+.table1 {
+   border-collapse: separate;
+   border-spacing: 10px;
+   background: transparent bottom left repeat-x;
+   color: #fff;
+   border-radius: 35px 35px 35px 35px; 
+   -moz-border-radius: 35px 35px 35px 35px; 
+   -webkit-border-radius: 35px 35px 35px 35px; 
+   border: 5px solid #5878ca;
+}
+td, tr {
+  background: transparent ;
+  margin: 5px;
+  padding: 5px;
+  font-family: cursive;
+  border-radius: 35px 35px 35px 35px; 
+   -moz-border-radius: 35px 35px 35px 35px; 
+   -webkit-border-radius: 35px 35px 35px 35px; 
+   border: 3px solid #5878ca;
+}
+
