@@ -134,7 +134,7 @@ and open the template in the editor.
                     <option value="1">Bogota</option> 
                     <option value="2">Cali</option> 
                     <option value="3">Medellin</option>
-                    </optgroup></select><DIRECCION:<input class="caja" type="text" name="dir" id="dir"></p></td></tr>
+                    </optgroup></select><DIRECCION:><input class="caja" type="text" name="dir" id="dir"></p></td></tr>
                 </table>
             </form>
     </section>
